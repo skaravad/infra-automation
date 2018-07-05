@@ -4,9 +4,10 @@ pipeline {
     stage('Build') {
       steps {
         sh 'echo "Building ..."'
+        input 'Enter the instance size'
       }
     }
-    stage('') {
+    stage('error') {
       steps {
         echo 'Test'
       }
